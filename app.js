@@ -5,7 +5,6 @@ var express = require('express'),
 
 // import routes
 var routes = require('./controller/index');
-var student_route  = require('./controller/student');
 var pokedex_route = require('./controller/pokedex');
 var trainer_route = require('./controller/trainer');
 var enemy_route = require('./controller/enemy');
@@ -31,7 +30,6 @@ app.set('subtitle', 'Lab 18');
 
 //configure routes
 app.use('/', routes);
-app.use('/student', student_route);
 app.use('/pokedex', pokedex_route);
 app.use('/trainer', trainer_route);
 app.use('/enemy', enemy_route);
