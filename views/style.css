@@ -1,0 +1,17 @@
+table.login {
+    border:none;
+}
+
+body {
+    background-image: url("http://i.imgur.com/MXIsxsT.jpg");
+    background-color: #549fbf;
+
+}
+
+footer {
+    margin-top:20px;
+}
+
+header {
+    margin-bottom:20px;
+}

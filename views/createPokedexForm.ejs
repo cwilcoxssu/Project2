@@ -1,0 +1,33 @@
+<% // create a list of javascript files to have the header load %>
+<% var js_include = ['create_pokemon.js']; %>
+<% include header %>
+
+<!-- Note that this is a post -->
+<form id="create_user_form" action="<%= action %>">
+    <table id="login">
+        <tr><td>PokeID:</td>
+            <td><input type="text" id="PokeID" name="PokeID" /></td>
+        </tr>
+        <tr><td>Name:</td>
+            <td><input type="text" id="Name" name="Name" /></td>
+        </tr>
+        <tr><td>Level:</td>
+            <td><input type="text" id="Level" name="Level" /></td>
+        </tr>
+        <tr><td>Primary Type:</td>
+            <td><input type="text" id="Primary_type" name="Primary_type" /></td>
+        </tr>
+        <tr><td>Secondary Type:</td>
+            <td><input type="text" id="Secondary_type" name="Secondary_type" /></td>
+        </tr>
+        <tr><td>Weakness:</td>
+            <td><input type="text" id="Weakness" name="Weakness" /></td>
+        </tr>
+    </table>
+    <!-- not that we use a button here and not submit -->
+    <input type="button" id="createPokemonBtn" value="Create" />
+</form>
+
+<div id="output" style="margin:10px;display:none"></div>
+
+<% include footer %>

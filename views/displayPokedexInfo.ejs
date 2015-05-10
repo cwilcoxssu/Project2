@@ -1,0 +1,14 @@
+<% include header %>
+
+<% if(rs.length > 0) { %>
+    PokeID: <%= rs[0].PokeID %>
+    Name: <%= rs[0].Name %> <br />
+    Level: <%= rs[0].Level %> <br />
+    Primary Type: <%= rs[0].Primary_type %> <br />
+    Secondary Type: <%= rs[0].Secondary_type %> <br />
+    Weakness: <%= rs[0].Weakness %> <br />
+<% } else { %>
+    No Pokemon matched this PokeID <%= PokeID %>.
+<% } %>
+
+<% include footer %>

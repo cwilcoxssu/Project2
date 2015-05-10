@@ -2,10 +2,23 @@ table.login {
     border:none;
 }
 
+#header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+body {
+    background-image: url("http://i.imgur.com/MXIsxsT.jpg");
+    background-color: #549fbf;
+
+}
+
 footer {
     margin-top:20px;
 }
 
 header {
     margin-bottom:20px;
-}
+}                                                                                                   z

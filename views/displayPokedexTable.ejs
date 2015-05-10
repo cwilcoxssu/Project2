@@ -1,0 +1,24 @@
+<% include header %>
+
+    <div>
+    <% if(rs.length > 0) { %>
+        <table border="1">
+            <tr><th>PokeID</th><th>Name</th></tr>
+            <% for (var i=0; rs.length > i; i++) { %>
+                <tr>
+                 <td><%= rs[i].PokeID %></td>
+                    <td><%= rs[i].Name %></td>
+                    <td><a href="/pokedex/?PokeID=<%= rs[i].PokeID %>">Stats</a></td>
+                </tr>
+            <% } %>
+        </table>
+    <% } else { %>
+         No Pokemon are entered into the Pokedex database table.
+    <% } %>
+    </div>
+
+    <div style="margin-top:10px;">
+        <a href="/pokedex/create">Create New Pokemon</a>
+    </div>
+
+<% include footer %>

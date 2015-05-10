@@ -1,7 +1,26 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Simple NodeJS MVC App</title>
+    <title>Pokemon Database</title>
+    <style>
+        table.login {
+            border:none;
+        }
+
+        body {
+            background-image: url("http://i.imgur.com/MXIsxsT.jpg");
+            background-color: #549fbf;
+
+        }
+
+        footer {
+            margin-top:20px;
+        }
+
+        header {
+            margin-bottom:20px;
+        }
+    </style>
     <script type="text/javascript" src="/jquery-1.11.2.min.js"></script>
 
     <% if(typeof js_include !== 'undefined') {
@@ -11,9 +30,3 @@
        }
     %>
 </head>
-    <body>
-        <% // single lin comment */ %>
-        <% /* block
-              comments
-            */ %>
-        <h1><%= locals.settings.subtitle %>:Simple NodeJS Application</h1>
